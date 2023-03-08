@@ -22,4 +22,9 @@ public class PessoaController {
     public ResponseEntity<List<Pessoa>> getAll() {
         return ResponseEntity.ok( (List<Pessoa>) repo.findAll() );
     }
+
+    @GetMapping("/final")
+    public ResponseEntity<String> getOla() {
+        return ResponseEntity.ok( "Fase 1 do Bootcamp fechada com sucesso!" );
+    }
 }
